@@ -6,10 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		754353E71C36BB7300B9FC93 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 754353E61C36BB7300B9FC93 /* main.cpp */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		754353E11C36BB7300B9FC93 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -23,8 +19,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		754353E31C36BB7300B9FC93 /* KnapsackProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KnapsackProject; sourceTree = BUILT_PRODUCTS_DIR; };
-		754353E61C36BB7300B9FC93 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		754353E31C36BB7300B9FC93 /* KnapsackProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = KnapsackProject; path = /Users/sithuthantsin86/Desktop/KnapsackProject/build/Debug/KnapsackProject; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,25 +36,7 @@
 		754353DA1C36BB7300B9FC93 = {
 			isa = PBXGroup;
 			children = (
-				754353E51C36BB7300B9FC93 /* KnapsackProject */,
-				754353E41C36BB7300B9FC93 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		754353E41C36BB7300B9FC93 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				754353E31C36BB7300B9FC93 /* KnapsackProject */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		754353E51C36BB7300B9FC93 /* KnapsackProject */ = {
-			isa = PBXGroup;
-			children = (
-				754353E61C36BB7300B9FC93 /* main.cpp */,
-			);
-			path = KnapsackProject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,7 +81,7 @@
 				en,
 			);
 			mainGroup = 754353DA1C36BB7300B9FC93;
-			productRefGroup = 754353E41C36BB7300B9FC93 /* Products */;
+			productRefGroup = 754353DA1C36BB7300B9FC93;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -118,7 +95,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				754353E71C36BB7300B9FC93 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +213,7 @@
 				754353EC1C36BB7300B9FC93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
