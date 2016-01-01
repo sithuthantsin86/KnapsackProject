@@ -19,7 +19,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		754353E31C36BB7300B9FC93 /* KnapsackProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = KnapsackProject; path = /Users/sithuthantsin86/Desktop/KnapsackProject/build/Debug/KnapsackProject; sourceTree = "<absolute>"; };
+		75D174411C36BDDA0028D942 /* KnapsackProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = KnapsackProject; path = /Users/sithuthantsin86/Desktop/KnapsackProject/build/Debug/KnapsackProject; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			);
 			name = KnapsackProject;
 			productName = KnapsackProject;
-			productReference = 754353E31C36BB7300B9FC93 /* KnapsackProject */;
+			productReference = 75D174411C36BDDA0028D942 /* KnapsackProject */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
