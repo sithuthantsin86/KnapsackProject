@@ -14,7 +14,11 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+<<<<<<< HEAD
                BlueprintIdentifier = "754353E21C36BB7300B9FC93"
+=======
+               BlueprintIdentifier = "75331BB81C36B18200E2EC62"
+>>>>>>> 9ff7e5c54290ff3ba77b24fd0d729c671146c14a
                BuildableName = "KnapsackProject"
                BlueprintName = "KnapsackProject"
                ReferencedContainer = "container:KnapsackProject.xcodeproj">
@@ -32,7 +36,11 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "754353E21C36BB7300B9FC93"
+=======
+            BlueprintIdentifier = "75331BB81C36B18200E2EC62"
+>>>>>>> 9ff7e5c54290ff3ba77b24fd0d729c671146c14a
             BuildableName = "KnapsackProject"
             BlueprintName = "KnapsackProject"
             ReferencedContainer = "container:KnapsackProject.xcodeproj">
@@ -55,7 +63,11 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "754353E21C36BB7300B9FC93"
+=======
+            BlueprintIdentifier = "75331BB81C36B18200E2EC62"
+>>>>>>> 9ff7e5c54290ff3ba77b24fd0d729c671146c14a
             BuildableName = "KnapsackProject"
             BlueprintName = "KnapsackProject"
             ReferencedContainer = "container:KnapsackProject.xcodeproj">
@@ -74,7 +86,11 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "754353E21C36BB7300B9FC93"
+=======
+            BlueprintIdentifier = "75331BB81C36B18200E2EC62"
+>>>>>>> 9ff7e5c54290ff3ba77b24fd0d729c671146c14a
             BuildableName = "KnapsackProject"
             BlueprintName = "KnapsackProject"
             ReferencedContainer = "container:KnapsackProject.xcodeproj">
