@@ -1,1 +1,19 @@
-This is the user manual of my code for PhD project.
+#####This is the user manual of Si Thu Thant Sin’s code for PhD project.#####
+
+1.cpp		-	Code for instances generation.
+2.cpp		-	Code for instances generation with alpha[]={0.1, 0.25, 0.5, 0.75, 0.9} for capacity.
+3.cpp		-	Table based dynamic programming algorithm code.
+4.cpp		-	Table based dynamic programming algorithm code parallel version.
+5.cpp		-	List based dynamic programming algorithm code.
+6.cpp		-	Upper bound algorithm and linear relaxation algorithm for list based dynamic programming.
+counters.cpp	-	counter object file for 5.cpp and 6.cpp (List based dynamic programming algorithm code.).
+
+
+
+
+#####How to compile#####
+
+1)	g++ -o example example.cpp	(code ကုိ နာမည္ေပးၿပီး compile လုပ္ျခင္း)
+2)	sudo g++-6 -fopenmp -o example example.cpp	(OpenMP ပါေသာ code ကို နာမည္ေပးၿပီး compile လုပ္ျခင္း)
+3)	g++ -c example.cpp -o example.o (or) g++ -c -o example.o example.cpp  (code ဖိုင္ကို object ဖိုင္ျပဳလုပ္ျခင္း)
+4)	g++ -o example example_objectfile.o example.cpp (code ကုိ object file ႏွင့္တြဲၿပီး compile လုပ္ျခင္း)
