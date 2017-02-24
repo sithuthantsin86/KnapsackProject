@@ -10,6 +10,17 @@ counters.cpp	-	counter object file for 5.cpp and 6.cpp (List based dynamic progr
 
 
 
+#####Methods#####
+
+UC	= Uncorrelated_data_instances
+WC	= Weekly_correlated_instances
+SC	= Strongly_correlated_instances
+ISC	= Inverse_strongly_correlated_instances
+ASC	= Almost_strongly_correlated_instances
+SS	= Subset_sum_instances
+UCS	= Uncorrelated_instances_with_similar_weights
+
+
 
 #####How to compile#####
 
@@ -17,3 +28,13 @@ counters.cpp	-	counter object file for 5.cpp and 6.cpp (List based dynamic progr
 2)	sudo g++-6 -fopenmp -o example example.cpp	(OpenMP ပါေသာ code ကို နာမည္ေပးၿပီး compile လုပ္ျခင္း)
 3)	g++ -c example.cpp -o example.o (or) g++ -c -o example.o example.cpp  (code ဖိုင္ကို object ဖိုင္ျပဳလုပ္ျခင္း)
 4)	g++ -o example example_objectfile.o example.cpp (code ကုိ object file ႏွင့္တြဲၿပီး compile လုပ္ျခင္း)
+
+
+
+#####Git commands#####
+
+git clone https://github.com/sithuthantsin86/knapsackproblem.git (Git ေပၚမွာရွိတာကုိ လွမ္းၿပီးယူတာ)
+git status (ေျပာင္းလဲသြားတဲ့ အေျခအေနေတြကုိ ျပတာ)
+git add -A (or) git add “filename” (မိမိေျပာင္းလဲထားတဲ့ ဖိုင္ေတြကို local git ေပၚမွာေပါင္းထည့္ျခင္း)
+git commit -m (မိမိဘာေတြ လုပ္ၿပီးသြားလဲဆိုတာကုိ Message နဲ႔မွတ္သားျခင္း) (-m မပါပဲရိုက္ပါက vim နဲ႔ဖိုင္တစ္ဖိုင္ေရးဖို႔ က်လာမယ္)
+git push (မိမိစက္ထဲတြင္ ျပင္ဆင္ၿပီးသားအရာေတြအားလံုးကို global git ကိုပို႔တာ)
