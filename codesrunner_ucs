@@ -1,0 +1,38 @@
+#                          #
+# My Program Runner Script #
+#                          #
+clear
+echo "$(tput setaf 1)%%%%%%%%% Starting Script for UCS %%%%%%%%%$(tput sgr0)"
+#
+#
+# Folder Creation
+#
+if [ ! -d "RESULTS" ]; then
+mkdir RESULTS
+fi
+#
+#
+# Old file for Uncorrelated_instances_with_similar_weights will be delete if needed
+#
+if [ -f RESULTS/Uncorrelated_instances_with_similar_weights_Results.xls ]; then
+rm RESULTS/Uncorrelated_instances_with_similar_weights_Results.xls
+fi
+#
+#
+# For solving Uncorrelated_instances_with_similar_weights
+#
+echo -e "Table based runtime\tTable based parallel runtime with 2 threads\tTable based parallel runtime with 4 threads\tDynamic programming with array runtime\tAdded steps\tMerged steps\tDynamic programming with UB1\tAdded steps\tMerged steps\tDynamic programming with UB2\tAdded steps\tMerged steps\tMaximum profit\tMaximum Capacity" >> RESULTS/Uncorrelated_instances_with_similar_weights_Results.xls
+set countg = 1
+for file in inputs/Uncorrelated_instances_with_similar_weights/*
+do
+ countg=`expr $countg + 1`
+ echo -n $countg"\t" >> RESULTS/Uncorrelated_instances_with_similar_weights_Results.xls
+ ./3 $file >> RESULTS/Uncorrelated_instances_with_similar_weights_Results.xls
+ ./4 $file 2 >> RESULTS/Uncorrelated_instances_with_similar_weights_Results.xls
+ ./4 $file 4 >> RESULTS/Uncorrelated_instances_with_similar_weights_Results.xls
+ ./5 $file >> RESULTS/Uncorrelated_instances_with_similar_weights_Results.xls
+ ./6 $file 1 >> RESULTS/Uncorrelated_instances_with_similar_weights_Results.xls
+ ./6 $file 2 >> RESULTS/Uncorrelated_instances_with_similar_weights_Results.xls
+done
+echo "Uncorrelated_instances_with_similar_weights done"
+echo -e "\nEnd.\n"

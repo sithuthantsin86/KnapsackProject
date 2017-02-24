@@ -1,0 +1,38 @@
+#                          #
+# My Program Runner Script #
+#                          #
+clear
+echo "$(tput setaf 1)%%%%%%%%% Starting Script for UC %%%%%%%%%$(tput sgr0)"
+#
+#
+# Folder Creation
+#
+if [ ! -d "RESULTS" ]; then
+mkdir RESULTS
+fi
+#
+#
+# Old file for Uncorrelated_data_instances will be delete if needed
+#
+if [ -f RESULTS/Uncorrelated_data_instances_Results.xls ]; then
+rm RESULTS/Uncorrelated_data_instances_Results.xls
+fi
+#
+#
+# For solving Uncorrelated_data_instances
+#
+echo -e "Table based runtime\tTable based parallel runtime with 2 threads\tTable based parallel runtime with 4 threads\tDynamic programming with array runtime\tAdded steps\tMerged steps\tDynamic programming with UB1\tAdded steps\tMerged steps\tDynamic programming with UB2\tAdded steps\tMerged steps\tMaximum profit\tMaximum Capacity" >> RESULTS/Uncorrelated_data_instances_Results.xls
+set counta = 1
+for file in inputs/Uncorrelated_data_instances/*
+do
+ counta= `expr $counta + 1`
+ echo -n -e $counta"\t" >> RESULTS/Uncorrelated_data_instances_Results.xls
+ ./3 $file >> RESULTS/Uncorrelated_data_instances_Results.xls
+ ./4 $file 2 >> RESULTS/Uncorrelated_data_instances_Results.xls
+ ./4 $file 4 >> RESULTS/Uncorrelated_data_instances_Results.xls
+ ./5 $file >> RESULTS/Uncorrelated_data_instances_Results.xls
+ ./6 $file 1 >> RESULTS/Uncorrelated_data_instances_Results.xls
+ ./6 $file 2 >> RESULTS/Uncorrelated_data_instances_Results.xls
+done
+echo "Uncorrelated_data_instances done"
+echo -e "\nEnd.\n"
