@@ -28,7 +28,6 @@ public:
 Instances_generator::Instances_generator(int number_of_items){
 	sum=0; min=0; capacity=0; C=0;
 	alpha[0]=0.1; alpha[1]=0.25; alpha[2]=0.5; alpha[3]=0.75; alpha[4]=0.9;
-	mkdir("inputs", 0777);
 	p=(int *)malloc(number_of_items*sizeof(int));
 	if(p == NULL){cerr<<"Error : Your size is too much.\n";exit(1);}
 	w=(int *)malloc(number_of_items*sizeof(int));
